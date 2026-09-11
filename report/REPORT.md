@@ -131,9 +131,9 @@ Nguồn evidence: `segmentation_predictions.json` và `visuals/segmentation_pred
 
 | Tác vụ | Đơn vị/định dạng ground truth | Lỗi hoặc điểm mơ hồ quan sát được | Annotator làm gì? | Reviewer xem gì? |
 | --- | --- | --- | --- | --- |
-| Phân loại ảnh |  |  |  |  |
-| Phát hiện vật thể |  |  |  |  |
-| Instance segmentation |  |  |  |  |
+| Phân loại ảnh | 1 nhãn (class) đại diện cho toàn ảnh | Ảnh có nhiều chủ thể gây nhầm lẫn; ảnh mờ hoặc không có chủ thể rõ ràng | Xác định nhãn phù hợp nhất dựa trên tiêu chí của guideline (vd: chủ thể to nhất) | Kiểm tra xem nhãn có phản ánh đúng chủ thể chính của bức ảnh hay không |
+| Phát hiện vật thể | Bounding box (tọa độ) và nhãn cho từng vật thể | Vật thể bị che khuất, cắt mép; bounding box quá rộng hoặc lẹm vào vật thể | Vẽ box bao quanh toàn bộ phần nhìn thấy của vật thể sao cho ôm sát nhất | Kiểm tra box có sát viền không (viền thừa/thiếu), có sót vật thể nào không |
+| Instance segmentation | Đa giác (polygon/mask) và nhãn cho từng cá thể vật thể | Viền vật thể mờ (bóng, phản chiếu); vật thể bị che khuất làm đứt đoạn | Vẽ polygon bám sát theo đường viền thực tế của vật thể, tách biệt các instance | Đánh giá đường viền polygon có khít không, các instance có bị gộp sai không |
 
 ## 5. An toàn dữ liệu
 
@@ -144,12 +144,12 @@ Nguồn evidence: `segmentation_predictions.json` và `visuals/segmentation_pred
 
 ## 6. Danh sách bằng chứng
 
-- [ ] `classification_predictions.json`
-- [ ] `detection_predictions.json`
-- [ ] `segmentation_predictions.json`
-- [ ] `IMAGE_ATTRIBUTION.md`
-- [ ] `visuals/classification_top5.png`
-- [ ] `visuals/detection_predictions.png`
-- [ ] `visuals/segmentation_prediction.png`
-- [ ] Ô validation cuối notebook báo `PASS`.
-- [ ] Không có họ tên, MSSV hoặc dữ liệu nhạy cảm trong báo cáo/output.
+- [x] `classification_predictions.json`
+- [x] `detection_predictions.json`
+- [x] `segmentation_predictions.json`
+- [x] `IMAGE_ATTRIBUTION.md`
+- [x] `visuals/classification_top5.png`
+- [x] `visuals/detection_predictions.png`
+- [x] `visuals/segmentation_prediction.png`
+- [x] Ô validation cuối notebook báo `PASS`.
+- [x] Không có họ tên, MSSV hoặc dữ liệu nhạy cảm trong báo cáo/output.

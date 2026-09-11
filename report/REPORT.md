@@ -138,7 +138,9 @@ Nguồn evidence: `segmentation_predictions.json` và `visuals/segmentation_pred
 ## 5. An toàn dữ liệu
 
 - Một quy tắc bảo vệ dữ liệu:
+    - Không sao chép, tải xuống, chụp màn hình hoặc chia sẻ dữ liệu/hình ảnh của dự án ra bên ngoài thiết bị làm việc hoặc bất kỳ nền tảng mạng xã hội nào dưới mọi hình thức, đảm bảo tuân thủ nghiêm ngặt quy định bảo mật (NDA).
 - Nếu thấy ảnh hoặc dữ liệu không đúng phạm vi, tôi sẽ dừng và báo cho:
+    - Trưởng nhóm (Team Lead), Quản lý dự án (Project Manager), hoặc bộ phận hỗ trợ (Support/QA) ngay lập tức để được hướng dẫn xử lý.
 
 ## 6. Danh sách bằng chứng
 
